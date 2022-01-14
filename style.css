@@ -5,6 +5,7 @@ body{
 }
 .top-portion{
     display: flex;
+    
 }
 .initial{
     width:50%;
@@ -20,6 +21,14 @@ body{
 }
 .camera img{
     padding-left: 180px;
+    overflow: hidden;
+    width: 60%;
+    height: 90%;
+}
+.camera:hover{
+    transform: scale(1.4) rotate(360deg);
+   /* transform: rotate(360deg);*/
+    transition: transform 3s, ease-in, 1s ;
 }
 .popular{
     text-align: center;
@@ -31,12 +40,13 @@ body{
 .music{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
    
 }
 .tripod{
     width: 300px;
     height: 476px;
-    border:2px solid royalblue;
+    border:2px solid dimgray;
     padding:7px;
     padding top:15px;
 }

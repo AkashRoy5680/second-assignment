@@ -1,0 +1,73 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 40px 70px;
+    
+}
+.top-portion{
+    display: flex;
+}
+.initial{
+    width:50%;
+}
+.prebook{
+    background-color: #E02C6D;
+    width: 140px;
+    height: 36px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    text-align: center;
+}
+.camera img{
+    padding-left: 180px;
+}
+.popular{
+    text-align: center;
+}
+.figure{
+    width: 300px;
+    height: 256px;
+}
+.music{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+.tripod{
+    width: 300px;
+    height: 476px;
+    border:2px solid royalblue;
+    padding:7px;
+    padding top:15px;
+}
+.fa-star{
+    color: #FB8200;
+}
+.see {
+    color:#E02C6D;
+    float: right;
+
+}
+.see a{
+    color:#E02C6D;
+}
+.end{
+    background-color:darkolivegreen;
+    color: white;
+    text-align: center;   
+    justify-content: center;
+    width:95%;
+    padding: 3px;
+    margin-top: 5%;
+    padding-bottom:25px;
+
+}
+.copyright .last-heading{
+    text-align: center;  
+}
+.logo a{
+    color:white;
+}
+.fab{
+    padding-right: 16px;
+}

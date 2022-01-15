@@ -1,46 +1,57 @@
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 40px 70px;
-    
+    margin: 40px 70px;   
+
 }
+
 .top-portion{
     display: flex;
+  
+    
+    /*justify-content: space-between;*/
     
 }
-.initial{
+
+.roy{
     width:50%;
+
 }
 .prebook{
     background-color: #E02C6D;
     width: 140px;
-    height: 36px;
+    height: 40px;
     color: white;
     border-radius: 10px;
     padding: 5px 15px;
     text-align: center;
+    justify-content: center;
 }
+
 .camera img{
-    padding-left: 180px;
-    overflow: hidden;
+    /*padding-left: 180px; 
     width: 60%;
-    height: 90%;
+    height: 90%;*/
+    overflow: hidden;
+   
 }
 .camera:hover{
     transform: scale(1.4) rotate(360deg);
    /* transform: rotate(360deg);*/
     transition: transform 3s, ease-in, 1s ;
-}
+} 
 .popular{
     text-align: center;
 }
 .figure{
     width: 300px;
     height: 256px;
+    
 }
 .music{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 20px;
+    margin-top: 60px;
    
 }
 .tripod{
@@ -57,10 +68,45 @@ body{
     color:#E02C6D;
     float: right;
 
+
 }
 .see a{
     color:#E02C6D;
 }
+
+.section-title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 60px;
+  }
+.blog .thumbnil img {
+    width: 177px;
+    height: 117px;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+  }
+  .blog {
+    display: flex;
+  }
+  .blog-info {
+    padding-left: 16px;
+  }
+  .blog-title {
+    font-size: 20px;
+  }
+  .blog-author {
+    color: #9f9f9f;
+    font-size: 16px;
+  }
+  .blog-author a {
+    text-decoration: none;
+    color: #562eff;
+  }
+
+  
 .end{
     background-color:darkolivegreen;
     color: white;
@@ -81,3 +127,39 @@ body{
 .fab{
     padding-right: 16px;
 }
+@media only screen and (max-width: 688px) {
+    .container {
+     width: 100%;
+    }
+    /*.last-heading, .copyright, .logo{
+        flex-direction: column;
+    }*/
+    
+    /*.top-portion, .music, .blogs,.blog{*/
+        .top-portion{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /*flex-direction: column;*/
+        
+        
+    } 
+    .music{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+  @media screen and (min-width: 688px) and (max-width:992px) {
+    .container {
+     width: 100%;
+    }
+    .top-portion, .music{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+  }
